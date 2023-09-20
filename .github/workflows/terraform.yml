@@ -28,7 +28,7 @@ jobs:
     - name: Commands
       run: |
         terraform init -backend-config=./config/backend.conf
-        terraform validate
+        terraform validate 
         terraform plan -var-file=./config/variables.tfvars
 
    
